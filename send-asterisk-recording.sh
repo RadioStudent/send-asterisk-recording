@@ -115,7 +115,7 @@ elif [[ $RECORDEE_CID =~ $RS_CID_REGEX ]]; then
   # if recording run from incoming call from outside radio CID, put file in callee extension subfolder
   DEST_SUBFOLDER=`echo $RECORDEE_CID | cut -c $((${#RECORDEE_CID}-2))-${#RECORDEE_CID}`
   # and also mark from where it came...
-  RECORDING_FROM="-iz-${REC_CID}"
+  RECORDING_FROM="-${TXT_FROM}-${REC_CID}"
   # FIXME: when we get a call from outside and the callee initiates the recording), the recording filename description is wrong.
   # REC_CID is actually the one that starts the recording, not the one that placed the call. More an annoyance than a bug,
   #         Asterisk CDR will still show the right thing if checked, only the destination name is named wrong
