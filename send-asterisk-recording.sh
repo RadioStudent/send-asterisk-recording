@@ -29,6 +29,7 @@ RS_CID_REGEX='^(((386)|0)12428)?8[0-9][0-9]$'
 SMBSHARE="//SERVERNAME_OR_IP/tmp"
 SMBFOLDER="TELEFONSKI_POSNETKI"
 AUTHFILE=/etc/asterisk/smbclient_auth
+# see man smbclient for AUTHFILE format
 
 # some descriptive text for destination filename
 TXT_CALL="klic"
