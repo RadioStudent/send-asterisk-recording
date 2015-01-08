@@ -22,10 +22,6 @@
 # Where to send reports about unsuccessful uploads.
 ERROR_RECIPIENT=example@example.com
 
-# Create pretty-named variables from command-line parameters
-REC_DIR=$1
-REC_FILENAME=$2
-
 # regex for our internal CID numbers
 RS_CID_REGEX='^(((386)|0)12428)?8[0-9][0-9]$'
 
@@ -43,6 +39,9 @@ TXT_TO="na"
 ## END EDITABLE PARAMETERS. DO NOT CHANGE ANYTHING BELOW THIS LINE!
 ##
 
+# Create pretty-named variables from command-line parameters
+REC_DIR=$1
+REC_FILENAME=$2
 
 function _usage() {
   echo "`basename $0` ERROR: wrong parameters"
